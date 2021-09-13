@@ -1,0 +1,131 @@
+.showpost{
+    display: flex;
+}
+@media screen and (max-width: 768px){
+    .showpost{margin: 50px 0 75px 0;}
+}
+.showpost_Wrapper{
+    position: relative;
+    flex: 5.5;
+    padding: 10px;
+    border-left: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+    margin-bottom: 25px;
+}
+.showpost_top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid gainsboro;
+    padding-bottom: 5px;
+    width: 100%;
+}
+.post_topLeft{
+    padding: 0 5px;
+}
+.post_centerText{
+    padding: 0 5px;
+}
+.post_bottom_top{
+    padding: 0 5px;
+}
+@media screen and (max-width: 768px){
+    .showpost_top{
+        position: sticky;
+    }
+    .showpost_Wrapper{
+        border: 0;
+        padding: 10px 0;
+    }
+} 
+.showpost_postBottom{
+    border-bottom:  1px dotted gainsboro;
+    margin-bottom: 15px;
+}
+.commentPost form {
+    display: flex;
+    padding-left: 1px;
+}
+.commentPost{
+    position: fixed;
+    bottom: 0;
+    margin-left: -10px;
+    width: 45%;
+    background-color: white;
+    padding: 10px;
+}
+.commentPost_input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    outline: none;
+    border: 1px solid rgb(87, 1, 87);
+    margin-right: 5px;
+}
+@media screen and (max-width: 768px){
+    .commentPost{
+        bottom: 50px;
+        width: 97%;
+        border-bottom: 1px solid rgb(87, 1, 87);
+    }
+}
+.post_bottomLeft_Like{
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.commentPost_send{
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(87, 1, 87);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+.commentPost_send:hover{
+    background: transparent;
+    color: rgb(87, 1, 87);
+    font-weight: 500;
+    border: 1px solid rgb(87, 1, 87);
+    transition: all 0.5s;
+}
+.commentWrapper{
+    padding: 20px 5px;
+}
+.commentWrapper_comment{
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    border-bottom: 1px solid gray;
+}
+.commentWrapper_commentImage{
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.commentWrapper_commentContainer{
+    background: rgb(236, 230, 230);
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+.commentWrapper_commentText{
+    font-size: 12px;
+}
+.commentWrapper_commentDate{
+    font-size: 10px;
+    float: right;
+}
+@media screen and (max-width: 600px){
+    .commentWrapper_commentImage{
+        width: 55px;
+        height: 55px;
+    }
+
+}

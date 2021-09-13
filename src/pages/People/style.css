@@ -1,0 +1,28 @@
+.people{
+    display: flex;
+    overflow: hidden;
+}
+.peopleWrapper{
+    flex: 5.5;
+    padding: 10px;
+    border-left: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+}
+@media screen and (max-width: 768px){
+    .peopleWrapper{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border: none;
+        padding: 10px 0;
+    }
+}
+.peopleWrapper h3{
+    text-align: center;
+    text-transform: uppercase;
+}
+.peopleWrapper_container{
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

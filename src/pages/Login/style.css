@@ -1,0 +1,7 @@
+.loginError{
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(233, 68, 68);
+    color: white;
+    font-size: 13px;
+}

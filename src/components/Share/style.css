@@ -1,0 +1,104 @@
+.share{
+    width: 70%;
+    /* border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0,0,0,0.68);
+    box-shadow: 0px 0px 16px -8px rgba(0,0,0,0.68); */
+    margin: 10% auto 0;
+}
+@media screen and (max-width: 768px){
+    .share{
+        width: 95%;
+        margin-top: 60px;
+    }
+}
+.share_wrapper{
+    padding: 10px;
+}
+.share_top{
+    display: flex;
+    align-items: center;
+}
+.share_profileImg{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.share_top textarea {
+    border: none;
+    width: 85%;
+    resize: none;
+    min-height: 60px;
+    outline-width: 0;
+    padding: 10px;
+    background: transparent;
+    color: white;
+}
+.share_hr {
+    margin: 20px;
+}
+.share_bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.share_options{
+    display: flex;
+    margin-left: 20px;
+}
+.share_option {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.share_optionIcon {
+    font-size: 18px;
+    margin-right: 3px;
+}
+.share_optionText {
+    font-size: 14px;
+    font-weight: 500;
+}
+.share_bottomButton{
+    border: none;
+    padding: 5px 17px;
+    border-radius: 7px;
+    background-color: rgb(87, 1, 87);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.share_bottomButton:hover{
+    background: transparent;
+    color: rgb(87, 1, 87);
+    border: 1px solid rgb(87, 1, 87);
+    transition: all 0.5s;
+}
+.shareImgContainer{
+    padding: 0 20px 10px 20px;
+    position: relative;
+}
+.shareImg{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+.shareCancelImg{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+@media screen and (max-width: 600px){
+    .shareImg{
+        width: 150px;
+        height: 150px;
+    }
+    
+}

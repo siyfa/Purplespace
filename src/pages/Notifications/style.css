@@ -1,0 +1,75 @@
+.notifications{
+    display: flex;
+    overflow: hidden;
+}
+.notificationsWrapper{
+    flex: 5.5;
+    border: 1px solid gainsboro;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+.notificationsWrapper h4 {
+    text-align: center;
+}
+@media screen and (max-width: 768px){
+    .notifications{
+        margin-top: 50px;
+        padding: 0;
+    }
+    .notificationsWrapper{
+        border: none;
+        padding: 10px 0;
+    }
+}
+.notificationsWrapper_container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    border-bottom: 1px dotted gainsboro;
+}
+.notificationsWrapper_containerImage{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.notificationsWrapper_containerName span{
+    font-size:15px;
+    font-weight: 500;
+}
+.notificationsWrapper_containerName{
+    font-size:15px;
+    margin-right: 10px;
+}
+.notificationsWrapper_containerTime{
+    font-size: 13px;
+}
+.notificationsWrapper_no{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 50px;
+}
+@media screen and (max-width: 600px){
+    .notificationsWrapper{
+        padding: 10px 5px;
+    }
+    .notificationsWrapper_containerImage{
+        width: 40px;
+        height: 40px;
+    }
+    .notificationsWrapper_containerName span{
+        font-size:11px;
+        font-weight: 500;
+    }
+    .notificationsWrapper_containerName{
+        font-size:11px;
+    }
+    .notificationsWrapper_containerTime{
+        font-size: 9px;
+    }
+    .notificationsWrapper_no{
+        font-size: 8px;
+    }
+}

@@ -1,0 +1,235 @@
+.settings{
+    display: flex;
+    overflow: hidden;
+}
+.settings_wraapperRight{
+    flex: 9;
+}
+.settings_wraapperRight form{
+    display: flex;
+    flex-wrap: wrap;
+}
+.settingsProfile, .settingsData, .settingsSecurity{
+    flex: 4;
+    border-left: 1px dotted gainsboro;
+    display: block;
+}
+@media screen and (max-width: 768px){
+    .settings{
+        margin-top: 50px;
+        padding: 0;
+    }
+    .settingsProfile, .settingsData, .settingsSecurity{
+        width: 100%;
+        flex-direction: column;
+        flex: none;
+        margin-bottom: 10px;
+        border: none;
+        padding: 0;
+    }
+}
+h3{
+    text-align: center; 
+    font-weight: 500;
+    background-color: rgb(87, 1, 87);
+    padding: 20px;
+    color: white;
+}
+.settingsProfile{
+    position: relative;
+}
+.settingsProfile_imagesCover{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.settingsProfile_imagesPicture{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    top: -60px;
+    left: 10px;
+    z-index: 3;
+}
+.forCoverImage{
+    position: absolute;
+    top: 80px;
+    right: 10px;
+    background-color: rgb(87, 1, 87);
+    padding: 5px;
+    border-radius: 50%;
+}
+.forProfileImage{
+    position: absolute;
+    top: -15px;
+    left: 135px;
+    background-color: rgb(87, 1, 87);
+    padding: 5px;
+    border-radius: 50%;
+    z-index: 3;
+}
+.coverImgContainer{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+.covershareImg{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.coverCancelImg{
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    background: red;
+    padding: 5px;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+}
+.settingsProfile_imagesPictureContainer{
+    position: relative;
+}
+.profileImgContainer{
+    position: absolute;
+    width: 100%;
+    z-index: 4;
+}
+.pictureshareImg{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    top: -60px;
+    left: 10px;
+    z-index: 3;
+}
+.pictureCancelImg{
+    position: absolute;
+    top: -15px;
+    left: 140px;
+    background: red;
+    padding: 5px;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    z-index: 3;
+}
+.settingsProfile_username{
+    margin-top: 100px;
+    overflow: hidden;
+}
+.settingsProfile_username label{
+    display: block;
+    margin: 10px 0;
+    text-align: left;
+    font-weight: 100;
+    padding-left: 10px;
+}
+.settingsProfile_username input{
+    width: 94%;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    border-bottom:1px solid rgb(110, 78, 110);
+    color: black;
+    outline: none;
+}
+.settingsProfile_username input:focus{
+    border-bottom: 2px solid rgb(110, 78, 110);
+}
+.settingsData_wrapper, .settingsSecurity_wrapper, .settingsProfile_username{
+    padding: 0 10px;
+}
+.settingsData_wrapper label, .settingsSecurity_wrapper label{
+    display: block;
+    margin: 10px 0;
+    background: transparent;
+    text-align: left;
+    font-weight: 100;
+    padding-left: 10px;
+}
+.settingsData_wrapper > input, .settingsSecurity_wrapper > input{
+    width: 94%;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    border-bottom:1px solid rgb(110, 78, 110);
+    background: transparent;
+    color: black;
+    outline: none;
+}
+.settingsData_wrapper > input:focus, .settingsSecurity_wrapper > input:focus{
+    border-bottom: 2px solid rgb(110, 78, 110);
+}
+.accountSettings, .saveSettings{
+    margin-top: 30px;
+    border-top: 1px dotted gainsboro;
+    padding-top: 10px;
+}
+.accountSettings > button{
+    border: none;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-bottom: 70px;
+}
+.accountSettings > button:hover{
+    font-weight: bold;
+    background: transparent;
+    border: 1px solid red;
+    color: red;
+    transition: all 0.5s;
+}
+.saveSettings > button{
+    border: none;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.saveSettings > button:hover{
+    font-weight: bold;
+    background: transparent;
+    border: 1px solid green;
+    color: green;
+    transition: all 0.5s;
+}
+.settings_wraapperRightMessage{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.settingsModal{
+    text-align: center;
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 15px;
+    font-size: 15px;
+}
+.settingsModal p {
+    margin-top: 5px;
+}
+.settingsModal > button {
+    border: none;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    padding: 7px 10px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+.settingsModal > button:hover{
+    font-weight: bold;
+    background: transparent;
+    border: 1px solid green;
+    color: green;
+    transition: all 0.5s;
+
+}

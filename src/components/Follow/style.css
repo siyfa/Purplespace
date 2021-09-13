@@ -1,0 +1,55 @@
+
+.peopleWrapper_person{
+    padding: 5px;
+    background-color: rgb(230, 196, 230);
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.personImage{
+    width: 300px;
+    object-fit: cover;
+    height: 300px;
+    border-radius: 10px;
+    display: block;
+    margin: 0px auto;
+}
+.people_person_Image{
+    margin: 0 auto;
+    width: 100%;
+}
+.peopleWrapper_personInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+}
+.peopleWrapper_person_name{
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+}
+.peopleWrapper_person_bio{
+    font-size: 15px;
+}
+.peopleWrapper_person_follow{
+    margin-top: 3px;
+    width: 100%;
+    padding: 5px;
+    border: none;
+    color: white;
+    background-color: rgb(87, 1, 87);
+    border-radius: 7px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.peopleWrapper_person_follow:hover{
+    background: transparent;
+    color: rgb(87, 1, 87);
+    border: 1px solid rgb(87, 1, 87);
+    transition: all 0.5s;
+    font-weight: 500;
+}

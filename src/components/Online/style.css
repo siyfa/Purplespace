@@ -1,0 +1,28 @@
+.rightbar_friendListFriend{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.rightbar_friendListContainer{
+    margin-right: 10px;
+    position: relative;
+}
+.rightbar_friendListFriendImage{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.rightbar_friendListFriendOnline{
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: limegreen;
+    top: -2px;
+    right: 0;
+    border: 2px solid white;
+}
+.rightbar_friendListFriendUsername{
+    font-weight: 500;
+}

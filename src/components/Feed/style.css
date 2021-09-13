@@ -1,0 +1,85 @@
+.feed{
+    flex: 5.5;
+    position: relative;
+}
+.feed_wrapper{
+    padding: 10px;
+    border-left: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+    margin-top: -70px;
+}
+.feed_wrapperShare{
+    position: fixed;
+    height:100vh;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(87, 1, 87,  0.9);
+    z-index: 10;
+}
+.feed_wrapperShare .feed_wrapperCancel{
+    text-align: center;
+    cursor: pointer;
+    padding: 7px;
+    color: wheat;
+    background-color: red;
+    float: right;
+    margin-right: 40px;
+    border-radius: 10px;
+}
+.feed_wrapperShare .feed_wrapperCancel:hover{
+    background-color: rgb(204, 21, 21);
+}
+.postModalWrapper{
+    position: sticky;
+    top: 85vh;
+    margin-left: 85%;
+    background-color: rgb(87, 1, 87);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.postModalWrapper:hover{
+    background-color: rgb(95, 38, 95);
+}
+.postModalWrapper_icon{
+    align-items: center;
+}
+.noTimelinePost{
+    margin-top: 30px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+.noTimelinePost h3{
+    background: none;
+    padding: 0;
+    color: black;
+    text-align: left;
+    margin-bottom: 5px;
+}
+.noTimelinePost p{
+    margin: 5px 0;
+    font-size: 15px;
+    line-height: 30px;
+}
+.noTimelinePost a{
+    text-decoration: none;
+}
+@media screen and (max-width: 768px){
+    .feed{
+        margin-bottom: 20px;
+        padding: 10px 0;
+        border: none;
+    }
+    .feed_wrapper{
+        padding: 10px 5px;
+        margin-top: -30px;
+    }
+    .postModalWrapper{
+        top: 79vh;
+        margin-left: 85%;
+    }
+}

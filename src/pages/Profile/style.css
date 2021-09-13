@@ -1,0 +1,117 @@
+.profile{
+    display: flex;
+    padding: 0;
+}
+.profile_right{
+    flex: 9;
+}
+.profile_rightTop{
+    border-left: 1px solid gainsboro;
+}
+.profile-rightTopCover{
+    height: 320px;
+    position: relative;
+}
+.profile_rightTopCoverImage{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    background-color: wheat;
+}
+.profile_rightTopUserImage{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    left: 10px;
+    top: 170px;
+    border: 3px solid white;
+}
+.profile_rightButtons{
+    position: absolute;
+    right: 35px;
+    top: 270px;
+}
+.profileFollowMessage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profileMessage {
+    margin-top: 15px;
+    margin-right: 5px;
+}
+.profileFollowMessage .rightbar_follow{
+    font-size: 12px;
+    padding: 1px 5px;
+}
+.profile_rightEdit{
+    border-radius: 7px;
+    padding: 5px 7px;
+    background-color: rgb(49, 49, 49);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.profile_rightEdit:hover{
+    background-color: rgb(90, 88, 88);
+}
+.profile_rightTopInfo{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gainsboro;
+    font-size: 13px;
+}
+.profile_rightTopInfoDesc{
+    font-weight: 300;
+    padding-bottom: 13px;
+}
+.profile_rightTopInfoName{
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding-top: 3px;
+}
+.profile_rightTopInfoUsername{
+    font-size: 17px;
+    font-weight: 300;
+    padding-bottom: 13px;
+}
+.profile_rightTopInfoFollow{
+    font-size: 14px;
+    font-weight: 300;
+}
+.profile_rightTopInfoFollow  span{
+    margin-right: 12px;
+}
+.profile_rightTopInfoLocation{
+    display: flex;
+    align-items: center;
+    padding-bottom: 13px;
+}
+.locationBarge{
+    font-size: 15px;
+    margin-right: 7px;
+}
+.profile_rightBottom{
+    display: flex;
+}
+.timeline{
+    background: transparent;
+    text-align: left;
+    color: black;
+    border-left: 1px solid gainsboro;
+    margin-bottom: -20px;
+}
+@media screen and (max-width: 768px){
+    .profile_rightTop{
+        border: none;
+    }
+    .timeline{
+        border: none;
+        margin-bottom: -70px;
+    }
+}

@@ -1,0 +1,113 @@
+.post{
+    width: 100%;
+    border-radius: 10px;
+    /* -webkit-box-shadow: 0px 0px 16px -8px rgba(0,0,0,0.68);
+    box-shadow: 0px 0px 16px -8px rgba(0,0,0,0.68); */
+    background-color: white;
+    margin: 20px 0;
+}
+.post_wrapper{
+    padding: 10px;
+}
+.post_top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.post_topRightIcon{
+    cursor: pointer;
+    align-items: center;
+    position: relative;
+    transition: all 0.5s;
+}
+.post_topRightIconOption{
+    padding: 5px;
+    background-color: rgb(42, 41, 43);
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    width: 65px;
+    text-align: center;
+    transition: all 0.5s;
+}
+.post_topRightIconOption span{
+    font-size: 10px;
+    color: gainsboro;
+}
+.post_topRightIconOption span:hover{
+    text-decoration: underline;
+}
+.post_topLeft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.post_topLeftImage{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.post_topLeftUsername{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 10px;
+}
+.post_topLeftDate{
+    font-size: 12px;
+}
+.post_center{
+    margin: 10px 0 20px 0;
+}
+.post_centerImage{
+    margin-top: 20px;
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+.post_centerText{
+    font-size: 14px;
+    padding: 5px;
+}
+.post_bottom_top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.post_bottomLeft{
+    display: flex;
+    align-items: center;
+}
+.post_bottomLikeIcon{
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.post_bottomLikeCouter{
+    font-size: 15px;
+}
+.post_bottomRightComment{
+    cursor: pointer;
+    font-size: 15px;
+}
+.post_bottom_buttons{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-top: 1px solid gainsboro;
+    text-align: center;
+}
+.post_bottom_buttons a{
+    text-decoration: none;
+    color: rgb(54, 35, 54);
+}
+.post_bottom_buttons p {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    color: rgb(54, 35, 54);
+    font-weight: lighter;
+}

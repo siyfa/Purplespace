@@ -1,0 +1,131 @@
+.messenger{
+    height: calc(100vh - 70px);
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.chatBox{
+    flex: 9;
+    border-left: 1px solid gainsboro;
+}
+@media screen and (max-width: 768px){
+    .chatBox{
+        margin-top: 50px;
+        flex: 12;
+        border: none;
+        padding: 0;
+    }
+}
+.chatBox_title{
+    font-weight: 500;
+    text-align: center;
+    background: rgb(87, 1, 87);
+    font-size: 24px;
+}
+.chatOnline{
+    height: 100%;
+    padding: 10px;
+}
+.chatOnline h4 {
+    border-bottom:  2px dotted gainsboro;
+    padding: 7px 0;
+    color: black;
+    width: 97%;
+}
+.chatOnline_Wrapper::-webkit-scrollbar{
+    display: none;
+}
+.chatBox_Wrapper{
+    position: relative;
+    /* background-image: url('https://images.unsplash.com/photo-1557682268-e3955ed5d83f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MzZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
+    background-position: center;
+    background-size: cover; */
+    /* background-color: rgb(235, 230, 240); */
+    /* height: 100%; */
+}
+.chatBox_top{
+    overflow-y: scroll;
+    height: calc(100vh - 99px);
+    position: relative;
+    /* background: chocolate; */
+    background-image: url('https://i.pinimg.com/originals/dc/12/6d/dc126da7b3f3ad76f158131e66ea3f60.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.chatBox_backMessage{
+    margin-bottom: 70px;
+}
+.chatBox_top::-webkit-scrollbar{
+    display: none;
+}
+@media screen and (max-width: 768px){
+    .chatBox_top{
+        height: calc(100vh - 150px);
+    }
+}
+.chatMenu_input{
+    width: 90%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid grey;
+    background: transparent;
+    outline-width: 0;
+}
+.chatBox_bottom{
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    border-bottom: 1px solid white;
+    bottom: 0;
+    width: 74%;
+    background-color: rgb(87, 1, 87);
+}
+.chatBox_input{
+    width: 90%;
+    padding: 10px 20px;
+    height: 25px;
+    outline-width: 0;
+    border-radius: 30px;
+    resize: none;
+}
+.chatBox_input::-webkit-scrollbar{
+    display: none;
+}
+.chatBox_buttonSubmit{
+    width: 70px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(87, 1, 87);
+}
+@media screen and (max-width: 768px) {
+    .chatBox_input{
+        height: 15px;
+    }
+    .chatBox_bottom{
+        bottom: 50px;
+        width: 95%;
+    }
+}
+.chatBox_bottomStartConvo{
+    position: absolute;
+    top: 10%;
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    cursor: default;
+}
+.chatBox_back{
+    background: rgb(139, 88, 126);
+    z-index: 5;
+    position: sticky;
+    top: 0;
+    opacity: 1;
+}
+.chatBox_back:hover{
+    opacity: 0.8;
+}
