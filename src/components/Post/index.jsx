@@ -103,7 +103,7 @@ export default function Post({ post }) {
           <div className="post_bottom_top">
             <div className="post_bottomLeft">
               <img
-                src="https://e7.pngegg.com/pngimages/719/707/png-clipart-facebook-social-media-blog-quebra-linha-like-button-facebook-purple-violet.png"
+                src="https://res.cloudinary.com/siyfa/image/upload/v1631641131/Purplespace/fpqhuxinliruydneadn6.png"
                 alt="like"
                 className="post_bottomLikeIcon"
                 onClick={likeHandler}
