@@ -8,10 +8,10 @@
 }
 @media screen and (max-width: 768px){
     .post{
-          background: transparent,
-          margin: 2px,
-          border-top: 1px solid gainboro,
-          border-bottom: 1px solid gainboro
+          background: transparent;
+          margin: 2px;
+          border-top: 1px solid gainboro;
+          border-bottom: 1px solid gainboro;
      }
 }
 .post_wrapper{
