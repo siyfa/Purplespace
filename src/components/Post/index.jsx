@@ -103,7 +103,7 @@ export default function Post({ post }) {
           <div className="post_bottom_top">
             <div className="post_bottomLeft">
               <img
-                src="https://res.cloudinary.com/siyfa/image/upload/v1631479724/Purplespace/kpx48rpk7plf8xgpcd0r.png"
+                src="https://e7.pngegg.com/pngimages/719/707/png-clipart-facebook-social-media-blog-quebra-linha-like-button-facebook-purple-violet.png"
                 alt="like"
                 className="post_bottomLikeIcon"
                 onClick={likeHandler}
@@ -120,17 +120,16 @@ export default function Post({ post }) {
           </div>
           <div className="post_bottom_buttons">
             <p onClick={likeHandler} style={likeColor}>
-              <ThumbUpRoundedIcon />
-              Like
+              <ThumbUpRoundedIcon style={{ marginRight: "5px" }} /> Like
             </p>
             <Link to={`/posts/${post._id}`}>
               <p>
-                <TextsmsRoundedIcon />
+                <TextsmsRoundedIcon style={{ marginRight: "5px" }} />
                 Comment
               </p>
             </Link>
             <p>
-              <ShareRoundedIcon />
+              <ShareRoundedIcon style={{ marginRight: "5px" }} />
               Share
             </p>
           </div>
