@@ -92,8 +92,10 @@ export default function ShowPost() {
         userId: currentUser._id,
         text: text.current.value,
       };
-      await axios.post(`/posts/${post._id}/comments`, data);
-      window.location.reload();
+      const res = await axios.post(`/posts/${post._id}/comments`, data);
+      setComments((comments) => [...comments, res.data]);
+      text.current.value = "";
+      // window.location.reload();
     } catch (err) {
       console.log(err);
     }

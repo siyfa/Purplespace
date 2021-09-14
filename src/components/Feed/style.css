@@ -6,7 +6,7 @@
     padding: 10px;
     border-left: 1px solid gainsboro;
     border-right: 1px solid gainsboro;
-    margin-top: -70px;
+    /* margin-top: -120px; */
 }
 .feed_wrapperShare{
     position: fixed;
@@ -15,30 +15,34 @@
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: rgba(87, 1, 87,  0.9);
+    background-color: rgb(48, 13, 48);
     z-index: 10;
 }
 .feed_wrapperShare .feed_wrapperCancel{
     text-align: center;
     cursor: pointer;
-    padding: 7px;
+    padding: 5px;
     color: wheat;
-    background-color: red;
+    border: 1px solid red;
+    color: red;
     float: right;
     margin-right: 40px;
     border-radius: 10px;
 }
 .feed_wrapperShare .feed_wrapperCancel:hover{
-    background-color: rgb(204, 21, 21);
+    border: none;
 }
 .postModalWrapper{
+    margin-top: -130px;
     position: sticky;
-    top: 85vh;
+    top: 80vh;
     margin-left: 85%;
+    margin-bottom: 20%;
     background-color: rgb(87, 1, 87);
     border-radius: 50%;
     width: 50px;
     height: 50px;
+    z-index: 9;
 }
 .postModalWrapper:hover{
     background-color: rgb(95, 38, 95);
@@ -76,10 +80,11 @@
     }
     .feed_wrapper{
         padding: 10px 5px;
-        margin-top: -30px;
+        /* margin-top: -30px; */
     }
     .postModalWrapper{
         top: 79vh;
         margin-left: 85%;
+        margin-top: -70px;
     }
 }

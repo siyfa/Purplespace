@@ -62,8 +62,9 @@
 .post_centerImage{
     margin-top: 20px;
     width: 100%;
-    max-height: 500px;
-    object-fit: cover;
+    max-height: 300px;
+    max-height: 300px;
+    object-fit: fill;
 }
 .post_centerText{
     font-size: 14px;

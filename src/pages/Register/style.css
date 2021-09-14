@@ -143,9 +143,9 @@
     }
     .register_right form{
         padding: 0;
-        margin-top: 10px;
+        margin-top: 15px;
     }
     .register_rightBoxInput{
-        margin: 7px auto;
+        margin: 12px auto;
     }
 }

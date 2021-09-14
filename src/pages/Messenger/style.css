@@ -20,6 +20,14 @@
     font-weight: 500;
     text-align: center;
     background: rgb(87, 1, 87);
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 10px 0 0 0;
+}
+.chatBox_title p {
+    margin-left: 30px;
     font-size: 24px;
 }
 .chatOnline{
@@ -45,8 +53,8 @@
 }
 .chatBox_top{
     overflow-y: scroll;
-    height: calc(100vh - 99px);
-    position: relative;
+    height: calc(100vh - 120px);
+    /* margin-top: 20px; */
     /* background: chocolate; */
     background-image: url('https://i.pinimg.com/originals/dc/12/6d/dc126da7b3f3ad76f158131e66ea3f60.jpg');
     background-position: center;
@@ -119,13 +127,9 @@
     text-align: center;
     cursor: default;
 }
-.chatBox_back{
+/* .chatBox_back{
     background: rgb(139, 88, 126);
-    z-index: 5;
-    position: sticky;
-    top: 0;
-    opacity: 1;
 }
 .chatBox_back:hover{
     opacity: 0.8;
-}
+} */

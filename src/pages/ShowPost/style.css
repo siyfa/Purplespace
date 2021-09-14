@@ -43,6 +43,7 @@
 .showpost_postBottom{
     border-bottom:  1px dotted gainsboro;
     margin-bottom: 15px;
+    padding: 5px 0;
 }
 .commentPost form {
     display: flex;

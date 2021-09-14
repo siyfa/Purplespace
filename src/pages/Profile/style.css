@@ -104,7 +104,7 @@
     text-align: left;
     color: black;
     border-left: 1px solid gainsboro;
-    margin-bottom: -20px;
+    /* margin-bottom: -20px; */
 }
 @media screen and (max-width: 768px){
     .profile_rightTop{
@@ -112,6 +112,6 @@
     }
     .timeline{
         border: none;
-        margin-bottom: -70px;
+        margin-bottom: -50px;
     }
 }

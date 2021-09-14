@@ -117,16 +117,25 @@ export default function Messenger({ own }) {
       <div className="messenger">
         <Sidebar />
         <div className="chatBox">
-          <h3 className="chatBox_title">Messenger</h3>
+          <div className="chatBox_title">
+            <div className="chatBox_back">
+              {currentChat && (
+                <IconButton onClick={() => setCurrentChat(null)}>
+                  <ArrowBackIcon htmlColor="white" />
+                </IconButton>
+              )}
+            </div>
+            {/* <p>Messenger</p> */}
+          </div>
           <div className="chatBox_Wrapper">
             {currentChat ? (
               <>
                 <div className="chatBox_top">
-                  <div className="chatBox_back">
+                  {/* <div className="chatBox_back">
                     <IconButton onClick={() => setCurrentChat(null)}>
                       <ArrowBackIcon htmlColor="rgb(87, 1, 87)" />
                     </IconButton>
-                  </div>
+                  </div> */}
                   <div className="chatBox_backMessage">
                     {messages.map((message) => (
                       <div ref={scrollRef} key={message._id}>

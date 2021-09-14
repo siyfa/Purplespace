@@ -39,6 +39,7 @@
     position: absolute;
     bottom: 0;
     display: none;
+    padding: 5px 0;
 }
 @media screen and (max-width: 768px){
     .container{
@@ -92,6 +93,12 @@
     justify-content: center;
     font-size: 10px;
     padding: 1px;
+}
+@media screen and (max-width: 768px) {
+    .iconBarge{
+        color: rgb(87, 1, 87);
+        background-color: white;
+    }
 }
 .searchbar{
     width: 100%;
