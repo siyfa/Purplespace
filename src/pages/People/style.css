@@ -1,6 +1,5 @@
 .people{
     display: flex;
-    overflow: hidden;
 }
 .peopleWrapper{
     flex: 5.5;
