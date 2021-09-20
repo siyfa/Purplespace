@@ -11,10 +11,11 @@
 }
 @media screen and (max-width: 768px){
     .post{
-        margin: 5px;
-        border-top: 1px solid gainsboro;
-        border-bottom: 1px solid gainsboro;
+        margin: 0;
+        border-top: 1px solid rgb(87, 1, 87);
+        border-bottom: 1px solid rgb(87, 1, 87);
         background: transparent;
+        border-radius: 0;
     }
 }
 .post_top{
